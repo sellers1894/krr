@@ -61,7 +61,7 @@ class Bidd{
     protected $check1;
 
     public function __construct(){
-//        $this->check = 0;
+        $this->check = false;
     }
 
 
@@ -194,6 +194,8 @@ class Bidd{
     {
         return $this->mark3;
     }
+
+
 
 
     /**

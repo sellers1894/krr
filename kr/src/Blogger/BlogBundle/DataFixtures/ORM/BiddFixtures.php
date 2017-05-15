@@ -28,6 +28,7 @@ class BiddFixtures  extends AbstractFixture implements OrderedFixtureInterface{
         $bidd->setMark1(50);
         $bidd->setMark2(40);
         $bidd->setMark3(22);
+        $bidd->setCheck1(false);
 
         $bidd->setSpecialty($manager->merge($this->getReference("specialty-1")));
         $manager->persist($bidd);
