@@ -5,6 +5,10 @@
 
 {% block body %}
     <div class="container">
-        <a class="btn btn-success" href="{{ path('_security_login') }}">Вход</a>
+        {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+            <a class="btn btn-warning center-block" href="{{ path('_security_logout') }}">Выход</a>
+        {% else %}
+            <a class="btn btn-success center-block" href="{{ path('_security_login') }}">Вход</a>
+        {% endif %}
     </div>
 {% endblock %}
