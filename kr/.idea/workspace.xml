@@ -15,19 +15,18 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BiddController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BiddController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/BiddController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="779">
-              <caret line="83" column="48" lean-forward="false" selection-start-line="83" selection-start-column="48" selection-end-line="83" selection-end-column="48" />
+            <state relative-caret-position="184">
+              <caret line="48" column="41" lean-forward="false" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
               <folding>
                 <element signature="e#445#469#1#PHP" expanded="true" />
                 <element signature="e#513#548#0#PHP" expanded="true" />
-                <element signature="e#1288#1321#0#PHP" expanded="true" />
-                <element signature="e#1652#1686#0#PHP" expanded="true" />
-                <element signature="e#2561#2595#0#PHP" expanded="true" />
-                <element signature="e#3222#3247#1#PHP" expanded="true" />
-                <element signature="e#3569#3595#0#PHP" expanded="true" />
+                <element signature="e#1651#1685#0#PHP" expanded="true" />
+                <element signature="e#2560#2594#0#PHP" expanded="true" />
+                <element signature="e#3221#3246#1#PHP" expanded="true" />
+                <element signature="e#3568#3594#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -46,7 +45,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Security/login.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
@@ -173,8 +172,8 @@
         <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Bidd/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Bidd/show.html.twig" />
         <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Bidd/edit.html.twig" />
-        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/BiddController.php" />
         <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Security/login.html.twig" />
+        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/BiddController.php" />
       </list>
     </option>
   </component>
@@ -724,12 +723,12 @@
       <option name="presentableId" value="Default" />
       <updated>1494827030506</updated>
       <workItem from="1494827075202" duration="1748000" />
-      <workItem from="1494835139738" duration="14191000" />
+      <workItem from="1494835139738" duration="15027000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15939000" />
+    <option name="totallyTimeSpent" value="16775000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -1113,22 +1112,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/BiddController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="83" column="48" lean-forward="false" selection-start-line="83" selection-start-column="48" selection-end-line="83" selection-end-column="48" />
-          <folding>
-            <element signature="e#445#469#1#PHP" expanded="true" />
-            <element signature="e#513#548#0#PHP" expanded="true" />
-            <element signature="e#1288#1321#0#PHP" expanded="true" />
-            <element signature="e#1652#1686#0#PHP" expanded="true" />
-            <element signature="e#2561#2595#0#PHP" expanded="true" />
-            <element signature="e#3222#3247#1#PHP" expanded="true" />
-            <element signature="e#3569#3595#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Bidd/new.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1145,6 +1128,21 @@
         <state relative-caret-position="153">
           <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/BiddController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="48" column="41" lean-forward="false" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+          <folding>
+            <element signature="e#445#469#1#PHP" expanded="true" />
+            <element signature="e#513#548#0#PHP" expanded="true" />
+            <element signature="e#1651#1685#0#PHP" expanded="true" />
+            <element signature="e#2560#2594#0#PHP" expanded="true" />
+            <element signature="e#3221#3246#1#PHP" expanded="true" />
+            <element signature="e#3568#3594#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -42,7 +42,7 @@ class BiddController extends Controller
             $em->persist($bidd);
             $em->flush();
 
-            $message = "Заяявка добавлена и находится на рассмотрении у приёмной комиссии.";
+            $message = "Заявка добавлена и находится на рассмотрении у приёмной комиссии.";
 //            return $this->redirectToRoute('blogger_blog_bidd_show', array('id' => $bidd->getId()));
         }
 
