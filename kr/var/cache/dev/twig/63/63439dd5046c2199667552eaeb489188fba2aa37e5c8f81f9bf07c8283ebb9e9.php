@@ -21,29 +21,29 @@ class __TwigTemplate_70b6c909990e15c3eb69776fcffebee223a4da6a993ab03559205c53a64
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_358bb5a8c3c8480379c1c5947c0a1f41bfe11e62ecdb76ebe07082a8763fc907 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_358bb5a8c3c8480379c1c5947c0a1f41bfe11e62ecdb76ebe07082a8763fc907->enter($__internal_358bb5a8c3c8480379c1c5947c0a1f41bfe11e62ecdb76ebe07082a8763fc907_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@BloggerBlog/Bidd/show.html.twig"));
+        $__internal_1223b5bb199ff1966570919be145207254f3e8619ee955f09f78822b5247be2b = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_1223b5bb199ff1966570919be145207254f3e8619ee955f09f78822b5247be2b->enter($__internal_1223b5bb199ff1966570919be145207254f3e8619ee955f09f78822b5247be2b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@BloggerBlog/Bidd/show.html.twig"));
 
-        $__internal_344c8653feda91f398deba012d0f3ded68a3630230551e9ba2871756c6afc6f6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_344c8653feda91f398deba012d0f3ded68a3630230551e9ba2871756c6afc6f6->enter($__internal_344c8653feda91f398deba012d0f3ded68a3630230551e9ba2871756c6afc6f6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@BloggerBlog/Bidd/show.html.twig"));
+        $__internal_d041eb556da000c62fcaf387ebb6e73bdb726337cf64e0d9845bf902f89c8fa9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d041eb556da000c62fcaf387ebb6e73bdb726337cf64e0d9845bf902f89c8fa9->enter($__internal_d041eb556da000c62fcaf387ebb6e73bdb726337cf64e0d9845bf902f89c8fa9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@BloggerBlog/Bidd/show.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_358bb5a8c3c8480379c1c5947c0a1f41bfe11e62ecdb76ebe07082a8763fc907->leave($__internal_358bb5a8c3c8480379c1c5947c0a1f41bfe11e62ecdb76ebe07082a8763fc907_prof);
+        $__internal_1223b5bb199ff1966570919be145207254f3e8619ee955f09f78822b5247be2b->leave($__internal_1223b5bb199ff1966570919be145207254f3e8619ee955f09f78822b5247be2b_prof);
 
         
-        $__internal_344c8653feda91f398deba012d0f3ded68a3630230551e9ba2871756c6afc6f6->leave($__internal_344c8653feda91f398deba012d0f3ded68a3630230551e9ba2871756c6afc6f6_prof);
+        $__internal_d041eb556da000c62fcaf387ebb6e73bdb726337cf64e0d9845bf902f89c8fa9->leave($__internal_d041eb556da000c62fcaf387ebb6e73bdb726337cf64e0d9845bf902f89c8fa9_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_dbedc6db8cf64f8f38439d4c04a760479e1676d8490944c50922b7ae4ecc3773 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_dbedc6db8cf64f8f38439d4c04a760479e1676d8490944c50922b7ae4ecc3773->enter($__internal_dbedc6db8cf64f8f38439d4c04a760479e1676d8490944c50922b7ae4ecc3773_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_592251ef433f0d659d764e0b32458deb666ef382711125c03a7936708f695659 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_592251ef433f0d659d764e0b32458deb666ef382711125c03a7936708f695659->enter($__internal_592251ef433f0d659d764e0b32458deb666ef382711125c03a7936708f695659_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_aea84035db707b0b2eb6e5e84a604b279bc15ec2338a78edccd500c2157fa6d7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_aea84035db707b0b2eb6e5e84a604b279bc15ec2338a78edccd500c2157fa6d7->enter($__internal_aea84035db707b0b2eb6e5e84a604b279bc15ec2338a78edccd500c2157fa6d7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_71be80de50d52fb58bef788d284f745d7c714a4f83c4b976c67f734181713cdb = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_71be80de50d52fb58bef788d284f745d7c714a4f83c4b976c67f734181713cdb->enter($__internal_71be80de50d52fb58bef788d284f745d7c714a4f83c4b976c67f734181713cdb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    <div class=\"container\">
@@ -117,7 +117,7 @@ class __TwigTemplate_70b6c909990e15c3eb69776fcffebee223a4da6a993ab03559205c53a64
         // line 46
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock((isset($context["delete_form"]) || array_key_exists("delete_form", $context) ? $context["delete_form"] : (function () { throw new Twig_Error_Runtime('Variable "delete_form" does not exist.', 46, $this->getSourceContext()); })()), 'form_start');
         echo "
-        <input class=\"btn btn-success\" type=\"submit\" value=\"Удалить\">
+        <input class=\"btn btn-danger\" type=\"submit\" value=\"Удалить\">
         <a class=\"btn btn-success\" href=\"";
         // line 48
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("blogger_blog_bidd_edit", array("id" => twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["bidd"]) || array_key_exists("bidd", $context) ? $context["bidd"] : (function () { throw new Twig_Error_Runtime('Variable "bidd" does not exist.', 48, $this->getSourceContext()); })()), "id", array()))), "html", null, true);
@@ -137,10 +137,10 @@ class __TwigTemplate_70b6c909990e15c3eb69776fcffebee223a4da6a993ab03559205c53a64
     </div>
 ";
         
-        $__internal_aea84035db707b0b2eb6e5e84a604b279bc15ec2338a78edccd500c2157fa6d7->leave($__internal_aea84035db707b0b2eb6e5e84a604b279bc15ec2338a78edccd500c2157fa6d7_prof);
+        $__internal_71be80de50d52fb58bef788d284f745d7c714a4f83c4b976c67f734181713cdb->leave($__internal_71be80de50d52fb58bef788d284f745d7c714a4f83c4b976c67f734181713cdb_prof);
 
         
-        $__internal_dbedc6db8cf64f8f38439d4c04a760479e1676d8490944c50922b7ae4ecc3773->leave($__internal_dbedc6db8cf64f8f38439d4c04a760479e1676d8490944c50922b7ae4ecc3773_prof);
+        $__internal_592251ef433f0d659d764e0b32458deb666ef382711125c03a7936708f695659->leave($__internal_592251ef433f0d659d764e0b32458deb666ef382711125c03a7936708f695659_prof);
 
     }
 
@@ -207,7 +207,7 @@ class __TwigTemplate_70b6c909990e15c3eb69776fcffebee223a4da6a993ab03559205c53a64
         <hr>
 
         {{ form_start(delete_form) }}
-        <input class=\"btn btn-success\" type=\"submit\" value=\"Удалить\">
+        <input class=\"btn btn-danger\" type=\"submit\" value=\"Удалить\">
         <a class=\"btn btn-success\" href=\"{{ path('blogger_blog_bidd_edit', { 'id': bidd.id }) }}\">Редактировать</a>
         {{ form_end(delete_form) }}
 

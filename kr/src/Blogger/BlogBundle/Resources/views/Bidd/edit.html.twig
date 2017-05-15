@@ -1,21 +1,53 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Редактирование заявки</h1>
+    <div class="container">
+        <h1>Редактирование заявки</h1>
+        <hr>
+        {% if message  %}
+            <div class="alert alert-success">
+                {{ message }}
+            </div>
+        {% endif %}
 
-    {{ form_start(edit_form) }}
-        {{ form_widget(edit_form) }}
-        <input type="submit" value="Edit">
-    {{ form_end(edit_form) }}
+        {{ form_start(edit_form) }}
+        <div class="form-group">
+            {{ form_errors(edit_form) }}
+            <label for="title">ФИО:</label>
+            {{ form_widget(edit_form.fio, {'attr': {'class':'form-control form-field', 'id': 'blogger_blogbundle_bidd_fio', 'placeholder': 'Введите фио'}}) }}
+        </div>
+        <div class="form-group">
+            <label for="blogger_blogbundle_bidd_mark1">Оценка по 1-му предмету:</label>
+            {{ form_widget(edit_form.mark1, {'attr': {'class':'form-control form-field', 'id': 'blogger_blogbundle_bidd_mark1', 'placeholder': 'Введите оценку', 'min': '0', 'max': '100'}}) }}
+        </div>
+        <div class="form-group">
+            <label for="blogger_blogbundle_bidd_mark2">Оценка по 2-му предмету:</label>
+            {{ form_widget(edit_form.mark2, {'attr': {'class':'form-control form-field', 'id': 'blogger_blogbundle_bidd_mark2', 'placeholder': 'Введите оценку', 'min': '0', 'max': '100'}}) }}
+        </div>
+        <div class="form-group">
+            <label for="blogger_blogbundle_bidd_mark3">Оценка по 3-му предмету:</label>
+            {{ form_widget(edit_form.mark3, {'attr': {'class':'form-control form-field', 'id': 'blogger_blogbundle_bidd_mark3', 'placeholder': 'Введите оценку', 'min': '0', 'max': '100'}}) }}
+        </div>
+        <div class="form-group">
+            <label for="blogger_blogbundle_bidd_check1">Специальность:</label>
+            {{ form_widget(edit_form.specialty, {'attr': {'class':'form-control form-field', 'id': 'blogger_blogbundle_bidd_check1'}}) }}
+        </div>
+        <div class="form-group">
+            <label for="blogger_blogbundle_bidd_check1">Подтверждение оценок:</label>
+            {{ form_widget(edit_form.check1, {'attr': {'id': 'blogger_blogbundle_bidd_check1'}}) }}
+        </div>
+        {{ form_rest(edit_form) }}
+            {#{{ form_widget(edit_form) }}#}
+            <input class="btn btn-warning" type="submit" value="Редактировать">
+        {{ form_end(edit_form) }}
 
-    <ul>
-        <li>
-            <a href="{{ path('blogger_blog_bidd_index') }}">Back to the list</a>
-        </li>
-        <li>
+        <div>
+            <br>
             {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
+            <input class="btn btn-danger" type="submit" value="Удалить">
             {{ form_end(delete_form) }}
-        </li>
-    </ul>
+        </div>
+
+        <h3><a href="{{ path('blogger_blog_bidd_index') }}">Назад к заявкам</a></h3>
+    </div>
 {% endblock %}

@@ -71,8 +71,8 @@ class BiddController extends Controller
      * Displays a form to edit an existing Bidd entity.
      *
      */
-    public function editAction(Request $request, Bidd $bidd)
-    {
+    public function editAction(Request $request, Bidd $bidd){
+        $message = "";
         $deleteForm = $this->createDeleteForm($bidd);
         $editForm = $this->createForm('Blogger\BlogBundle\Form\BiddType', $bidd);
         $editForm->handleRequest($request);
@@ -81,14 +81,15 @@ class BiddController extends Controller
 //            $bidd->setCheck(!false);
 //            $this->getDoctrine()->getManager()->persist($bidd);
             $this->getDoctrine()->getManager()->flush();
-
-            return $this->redirectToRoute('blogger_blog_bidd_edit', array('id' => $bidd->getId()));
+            $message = "Заявка отредактирована";
+//            return $this->redirectToRoute('blogger_blog_bidd_edit', array('id' => $bidd->getId()));
         }
 
         return $this->render('@BloggerBlog/Bidd/edit.html.twig', array(
             'bidd' => $bidd,
             'edit_form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
+            'message' => $message
         ));
     }
 

@@ -4,11 +4,14 @@
 
 
 {% block body %}
-    {% if error %}
-        <div class="error">{{ error.message }}</div>
-        <hr>
-    {% endif %}
+
     <div class="container">
+        {% if error %}
+            <hr>
+            <div class="alert alert-success">
+                Проверьте введённые данные
+            </div>
+        {% endif %}
         <hr>
         <form action="{{ path('_security_check') }}" method="POST">
             <div class="form-group">

@@ -21,29 +21,29 @@ class __TwigTemplate_02e647f8f9c81674d19f0f006d67e32ac6b423b3f57b2bf6fa64d72bb55
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_a5266c876d434f4ce7b1835dad2cea0b48b5557fa8e784399c4bf8a021292077 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_a5266c876d434f4ce7b1835dad2cea0b48b5557fa8e784399c4bf8a021292077->enter($__internal_a5266c876d434f4ce7b1835dad2cea0b48b5557fa8e784399c4bf8a021292077_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@BloggerBlog/Bidd/index.html.twig"));
+        $__internal_a50732bb73f5b3c9e5de32e202ba338cee4792300bd6c04d5cabc04c6ae68b00 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_a50732bb73f5b3c9e5de32e202ba338cee4792300bd6c04d5cabc04c6ae68b00->enter($__internal_a50732bb73f5b3c9e5de32e202ba338cee4792300bd6c04d5cabc04c6ae68b00_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@BloggerBlog/Bidd/index.html.twig"));
 
-        $__internal_bc746125a44b6b5decb20131a1147b3d56ca43a1e0cbbb42f8a0e36b3df67237 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_bc746125a44b6b5decb20131a1147b3d56ca43a1e0cbbb42f8a0e36b3df67237->enter($__internal_bc746125a44b6b5decb20131a1147b3d56ca43a1e0cbbb42f8a0e36b3df67237_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@BloggerBlog/Bidd/index.html.twig"));
+        $__internal_1da06525d73e341a54b2e20182fe8f3b817112b9f439313d940ca6dc651f6e66 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_1da06525d73e341a54b2e20182fe8f3b817112b9f439313d940ca6dc651f6e66->enter($__internal_1da06525d73e341a54b2e20182fe8f3b817112b9f439313d940ca6dc651f6e66_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@BloggerBlog/Bidd/index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_a5266c876d434f4ce7b1835dad2cea0b48b5557fa8e784399c4bf8a021292077->leave($__internal_a5266c876d434f4ce7b1835dad2cea0b48b5557fa8e784399c4bf8a021292077_prof);
+        $__internal_a50732bb73f5b3c9e5de32e202ba338cee4792300bd6c04d5cabc04c6ae68b00->leave($__internal_a50732bb73f5b3c9e5de32e202ba338cee4792300bd6c04d5cabc04c6ae68b00_prof);
 
         
-        $__internal_bc746125a44b6b5decb20131a1147b3d56ca43a1e0cbbb42f8a0e36b3df67237->leave($__internal_bc746125a44b6b5decb20131a1147b3d56ca43a1e0cbbb42f8a0e36b3df67237_prof);
+        $__internal_1da06525d73e341a54b2e20182fe8f3b817112b9f439313d940ca6dc651f6e66->leave($__internal_1da06525d73e341a54b2e20182fe8f3b817112b9f439313d940ca6dc651f6e66_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_d289fb1a47247878194be53c2a70c04823c1b1ef30682429c96f76da4e5e2095 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_d289fb1a47247878194be53c2a70c04823c1b1ef30682429c96f76da4e5e2095->enter($__internal_d289fb1a47247878194be53c2a70c04823c1b1ef30682429c96f76da4e5e2095_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_8e385c9fbc1e5227f2b7fed817de86b79275c4d3b837708d9afc256e25601a50 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_8e385c9fbc1e5227f2b7fed817de86b79275c4d3b837708d9afc256e25601a50->enter($__internal_8e385c9fbc1e5227f2b7fed817de86b79275c4d3b837708d9afc256e25601a50_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_730aeceddd9e03f7d7a66dc2d8883628ae8cf7af61b42e11d3ccc38aac41f76b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_730aeceddd9e03f7d7a66dc2d8883628ae8cf7af61b42e11d3ccc38aac41f76b->enter($__internal_730aeceddd9e03f7d7a66dc2d8883628ae8cf7af61b42e11d3ccc38aac41f76b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_6d6a6cfc87e7ebf13e5cb48c20e1d777866b6554d6ba746c717422026cb9f974 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_6d6a6cfc87e7ebf13e5cb48c20e1d777866b6554d6ba746c717422026cb9f974->enter($__internal_6d6a6cfc87e7ebf13e5cb48c20e1d777866b6554d6ba746c717422026cb9f974_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    <div class=\"container\">
@@ -58,54 +58,66 @@ class __TwigTemplate_02e647f8f9c81674d19f0f006d67e32ac6b423b3f57b2bf6fa64d72bb55
                     <th>Оценка 2</th>
                     <th>Оценка 3</th>
                     <th>Специальность</th>
+                    <th>Подтверждение</th>
                     <th>Редактирование</th>
                 </tr>
             </thead>
             <tbody>
             ";
-        // line 20
+        // line 21
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["bidds"]) || array_key_exists("bidds", $context) ? $context["bidds"] : (function () { throw new Twig_Error_Runtime('Variable "bidds" does not exist.', 20, $this->getSourceContext()); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["bidds"]) || array_key_exists("bidds", $context) ? $context["bidds"] : (function () { throw new Twig_Error_Runtime('Variable "bidds" does not exist.', 21, $this->getSourceContext()); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["bidd"]) {
-            // line 21
+            // line 22
             echo "                <tr>
                     <td><a href=\"";
-            // line 22
+            // line 23
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("blogger_blog_bidd_show", array("id" => twig_get_attribute($this->env, $this->getSourceContext(), $context["bidd"], "id", array()))), "html", null, true);
             echo "\">";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["bidd"], "id", array()), "html", null, true);
             echo "</a></td>
                     <td>";
-            // line 23
+            // line 24
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["bidd"], "fio", array()), "html", null, true);
             echo "</td>
                     <td>";
-            // line 24
+            // line 25
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["bidd"], "mark1", array()), "html", null, true);
             echo "</td>
                     <td>";
-            // line 25
+            // line 26
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["bidd"], "mark2", array()), "html", null, true);
             echo "</td>
                     <td>";
-            // line 26
+            // line 27
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["bidd"], "mark3", array()), "html", null, true);
             echo "</td>
-                    <td>";
-            // line 27
+                    ";
+            // line 28
+            if (twig_get_attribute($this->env, $this->getSourceContext(), $context["bidd"], "check1", array())) {
+                // line 29
+                echo "                        <td>Да</td>
+                        ";
+            } else {
+                // line 31
+                echo "                        <td>Нет</td>
+                    ";
+            }
+            // line 33
+            echo "                    <td>";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), $context["bidd"], "specialty", array()), "title", array()), "html", null, true);
             echo "</td>
                     <td>
                         <ul>
                             <li>
                                 <a href=\"";
-            // line 31
+            // line 37
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("blogger_blog_bidd_show", array("id" => twig_get_attribute($this->env, $this->getSourceContext(), $context["bidd"], "id", array()))), "html", null, true);
             echo "\">Просмотреть</a>
                             </li>
                             <li>
                                 <a href=\"";
-            // line 34
+            // line 40
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("blogger_blog_bidd_edit", array("id" => twig_get_attribute($this->env, $this->getSourceContext(), $context["bidd"], "id", array()))), "html", null, true);
             echo "\">Редактировать</a>
                             </li>
@@ -117,21 +129,21 @@ class __TwigTemplate_02e647f8f9c81674d19f0f006d67e32ac6b423b3f57b2bf6fa64d72bb55
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['bidd'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 40
+        // line 46
         echo "            </tbody>
         </table>
         <hr>
         <h3><a href=\"";
-        // line 43
+        // line 49
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("blogger_blog_prepod");
         echo "\">Назад в панель преподавателя</a></h3>
     </div>
 ";
         
-        $__internal_730aeceddd9e03f7d7a66dc2d8883628ae8cf7af61b42e11d3ccc38aac41f76b->leave($__internal_730aeceddd9e03f7d7a66dc2d8883628ae8cf7af61b42e11d3ccc38aac41f76b_prof);
+        $__internal_6d6a6cfc87e7ebf13e5cb48c20e1d777866b6554d6ba746c717422026cb9f974->leave($__internal_6d6a6cfc87e7ebf13e5cb48c20e1d777866b6554d6ba746c717422026cb9f974_prof);
 
         
-        $__internal_d289fb1a47247878194be53c2a70c04823c1b1ef30682429c96f76da4e5e2095->leave($__internal_d289fb1a47247878194be53c2a70c04823c1b1ef30682429c96f76da4e5e2095_prof);
+        $__internal_8e385c9fbc1e5227f2b7fed817de86b79275c4d3b837708d9afc256e25601a50->leave($__internal_8e385c9fbc1e5227f2b7fed817de86b79275c4d3b837708d9afc256e25601a50_prof);
 
     }
 
@@ -147,7 +159,7 @@ class __TwigTemplate_02e647f8f9c81674d19f0f006d67e32ac6b423b3f57b2bf6fa64d72bb55
 
     public function getDebugInfo()
     {
-        return array (  126 => 43,  121 => 40,  109 => 34,  103 => 31,  96 => 27,  92 => 26,  88 => 25,  84 => 24,  80 => 23,  74 => 22,  71 => 21,  67 => 20,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  138 => 49,  133 => 46,  121 => 40,  115 => 37,  107 => 33,  103 => 31,  99 => 29,  97 => 28,  93 => 27,  89 => 26,  85 => 25,  81 => 24,  75 => 23,  72 => 22,  68 => 21,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     public function getSourceContext()
@@ -167,6 +179,7 @@ class __TwigTemplate_02e647f8f9c81674d19f0f006d67e32ac6b423b3f57b2bf6fa64d72bb55
                     <th>Оценка 2</th>
                     <th>Оценка 3</th>
                     <th>Специальность</th>
+                    <th>Подтверждение</th>
                     <th>Редактирование</th>
                 </tr>
             </thead>
@@ -178,6 +191,11 @@ class __TwigTemplate_02e647f8f9c81674d19f0f006d67e32ac6b423b3f57b2bf6fa64d72bb55
                     <td>{{ bidd.mark1 }}</td>
                     <td>{{ bidd.mark2 }}</td>
                     <td>{{ bidd.mark3 }}</td>
+                    {% if bidd.check1 %}
+                        <td>Да</td>
+                        {% else %}
+                        <td>Нет</td>
+                    {% endif %}
                     <td>{{ bidd.specialty.title }}</td>
                     <td>
                         <ul>

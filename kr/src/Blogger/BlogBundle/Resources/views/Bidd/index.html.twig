@@ -13,6 +13,7 @@
                     <th>Оценка 2</th>
                     <th>Оценка 3</th>
                     <th>Специальность</th>
+                    <th>Подтверждение</th>
                     <th>Редактирование</th>
                 </tr>
             </thead>
@@ -24,6 +25,11 @@
                     <td>{{ bidd.mark1 }}</td>
                     <td>{{ bidd.mark2 }}</td>
                     <td>{{ bidd.mark3 }}</td>
+                    {% if bidd.check1 %}
+                        <td>Да</td>
+                        {% else %}
+                        <td>Нет</td>
+                    {% endif %}
                     <td>{{ bidd.specialty.title }}</td>
                     <td>
                         <ul>
