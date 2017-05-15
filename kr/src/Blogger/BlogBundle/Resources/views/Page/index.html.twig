@@ -1,0 +1,10 @@
+{# src/Blogger/BlogBundle/Resources/views/Page/index.html.twig #}
+{% extends 'BloggerBlogBundle::layout.html.twig' %}
+
+{% block body_title %}Главная{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <a class="btn btn-success" href="{{ path('_security_login') }}">Вход</a>
+    </div>
+{% endblock %}
