@@ -10,5 +10,14 @@
         {% else %}
             <a class="btn btn-success center-block" href="{{ path('_security_login') }}">Вход</a>
         {% endif %}
+
+        <hr>
+        <hr>
+
+        {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+            <a class="btn btn-success center-block" href="{{ path('blogger_blog_prepod') }}">Редактирование заявок</a>
+        {% else %}
+            <a class="btn btn-success center-block" href="{{ path('_security_login') }}">Подать заявку</a>
+        {% endif %}
     </div>
 {% endblock %}

@@ -42,6 +42,17 @@ class Bidd{
      */
     protected $mark1;
 
+    /**
+     * @ORM\Column(type="integer")
+     *
+     */
+    protected $mark2;
+
+    /**
+     * @ORM\Column(type="integer")
+     *
+     */
+    protected $mark3;
 
 
     /**
@@ -100,5 +111,77 @@ class Bidd{
     public function getSpecialty()
     {
         return $this->specialty;
+    }
+
+    /**
+     * Set mark1
+     *
+     * @param integer $mark1
+     *
+     * @return Bidd
+     */
+    public function setMark1($mark1)
+    {
+        $this->mark1 = $mark1;
+
+        return $this;
+    }
+
+    /**
+     * Get mark1
+     *
+     * @return integer
+     */
+    public function getMark1()
+    {
+        return $this->mark1;
+    }
+
+    /**
+     * Set mark2
+     *
+     * @param integer $mark2
+     *
+     * @return Bidd
+     */
+    public function setMark2($mark2)
+    {
+        $this->mark2 = $mark2;
+
+        return $this;
+    }
+
+    /**
+     * Get mark2
+     *
+     * @return integer
+     */
+    public function getMark2()
+    {
+        return $this->mark2;
+    }
+
+    /**
+     * Set mark3
+     *
+     * @param integer $mark3
+     *
+     * @return Bidd
+     */
+    public function setMark3($mark3)
+    {
+        $this->mark3 = $mark3;
+
+        return $this;
+    }
+
+    /**
+     * Get mark3
+     *
+     * @return integer
+     */
+    public function getMark3()
+    {
+        return $this->mark3;
     }
 }

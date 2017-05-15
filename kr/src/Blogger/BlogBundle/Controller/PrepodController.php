@@ -13,8 +13,11 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class PrepodController extends Controller
 {
-    public function indexAction()
-    {
+    public function indexAction(){
+        return $this->render('BloggerBlogBundle:Prepod:index.html.twig');
+    }
+
+    public function viewBid(){
         return $this->render('BloggerBlogBundle:Page:index.html.twig');
     }
 }

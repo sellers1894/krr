@@ -126,15 +126,6 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
-        // admin_home
-        if (rtrim($pathinfo, '/') === '/admin') {
-            if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'admin_home');
-            }
-
-            return array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\PrepodController::indexAction',  '_route' => 'admin_home',);
-        }
-
         // blogger_blog_homepage
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {
@@ -142,6 +133,83 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             }
 
             return array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\PageController::indexAction',  '_route' => 'blogger_blog_homepage',);
+        }
+
+        if (0 === strpos($pathinfo, '/prepod')) {
+            // blogger_blog_prepod
+            if (rtrim($pathinfo, '/') === '/prepod') {
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'blogger_blog_prepod');
+                }
+
+                return array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\PrepodController::indexAction',  '_route' => 'blogger_blog_prepod',);
+            }
+
+            if (0 === strpos($pathinfo, '/prepod/Bidd')) {
+                // blogger_blog_bidd_index
+                if (rtrim($pathinfo, '/') === '/prepod/Bidd') {
+                    if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'HEAD'));
+                        goto not_blogger_blog_bidd_index;
+                    }
+
+                    if (substr($pathinfo, -1) !== '/') {
+                        return $this->redirect($pathinfo.'/', 'blogger_blog_bidd_index');
+                    }
+
+                    return array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\BiddController::indexAction',  '_route' => 'blogger_blog_bidd_index',);
+                }
+                not_blogger_blog_bidd_index:
+
+                // blogger_blog_bidd_show
+                if (preg_match('#^/prepod/Bidd/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'HEAD'));
+                        goto not_blogger_blog_bidd_show;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'blogger_blog_bidd_show')), array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\BiddController::showAction',));
+                }
+                not_blogger_blog_bidd_show:
+
+            }
+
+        }
+
+        // blogger_blog_bidd_new
+        if ($pathinfo === '/new') {
+            if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                goto not_blogger_blog_bidd_new;
+            }
+
+            return array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\BiddController::newAction',  '_route' => 'blogger_blog_bidd_new',);
+        }
+        not_blogger_blog_bidd_new:
+
+        if (0 === strpos($pathinfo, '/prepod/Bidd')) {
+            // blogger_blog_bidd_edit
+            if (preg_match('#^/prepod/Bidd/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                    goto not_blogger_blog_bidd_edit;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'blogger_blog_bidd_edit')), array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\BiddController::editAction',));
+            }
+            not_blogger_blog_bidd_edit:
+
+            // blogger_blog_bidd_delete
+            if (preg_match('#^/prepod/Bidd/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                if ($this->context->getMethod() != 'DELETE') {
+                    $allow[] = 'DELETE';
+                    goto not_blogger_blog_bidd_delete;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'blogger_blog_bidd_delete')), array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\BiddController::deleteAction',));
+            }
+            not_blogger_blog_bidd_delete:
+
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

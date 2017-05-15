@@ -36,6 +36,23 @@ class Bidd{
      */
     protected $specialty;
 
+    /**
+     * @ORM\Column(type="integer")
+     *
+     */
+    protected $mark1;
+
+    /**
+     * @ORM\Column(type="integer")
+     *
+     */
+    protected $mark2;
+
+    /**
+     * @ORM\Column(type="integer")
+     *
+     */
+    protected $mark3;
 
 
     /**
@@ -70,5 +87,29 @@ class Bidd{
     public function getFio()
     {
         return $this->fio;
+    }
+
+    /**
+     * Set specialty
+     *
+     * @param \Blogger\BlogBundle\Entity\Specialty $specialty
+     *
+     * @return Bidd
+     */
+    public function setSpecialty(\Blogger\BlogBundle\Entity\Specialty $specialty = null)
+    {
+        $this->specialty = $specialty;
+
+        return $this;
+    }
+
+    /**
+     * Get specialty
+     *
+     * @return \Blogger\BlogBundle\Entity\Specialty
+     */
+    public function getSpecialty()
+    {
+        return $this->specialty;
     }
 }
