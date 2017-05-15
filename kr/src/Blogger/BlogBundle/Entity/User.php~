@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Andrey
- * Date: 26.04.2017
- * Time: 17:23
- */
 
 namespace Blogger\BlogBundle\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
@@ -15,9 +9,8 @@ use Symfony\Component\Security\Core\User\UserInterface;
  * @ORM\Entity(repositoryClass="Blogger\BlogBundle\Entity\Repository\UserRepository")
  * @ORM\Table(name="user")
  * @ORM\HasLifecycleCallbacks
- * @UniqueEntity(fields={"username", "email"},
- *     errorPath="port",
- *     message="This port is already in use on that host.")
+ * @UniqueEntity(fields={"username"},
+ *     message="Уникальное имя...")
  */
 class User implements UserInterface{
 
@@ -145,9 +138,7 @@ class User implements UserInterface{
      */
     public function __construct()
     {
-        $this->posts = new ArrayCollection();
         $this->userRoles = new ArrayCollection();
-        $this->createdAt = new \DateTime();
     }
 
     /**
@@ -214,27 +205,28 @@ class User implements UserInterface{
         $this->userRoles->removeElement($userRole);
     }
 
+
     /**
-     * Set email
+     * Set fio
      *
-     * @param string $email
+     * @param string $fio
      *
      * @return User
      */
-    public function setEmail($email)
+    public function setFio($fio)
     {
-        $this->email = $email;
+        $this->fio = $fio;
 
         return $this;
     }
 
     /**
-     * Get email
+     * Get fio
      *
      * @return string
      */
-    public function getEmail()
+    public function getFio()
     {
-        return $this->email;
+        return $this->fio;
     }
 }

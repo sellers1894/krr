@@ -27,7 +27,7 @@ class UserFixtures implements FixtureInterface{
     {
         $role = new Role();
         $role->setName('ROLE_PREPOD');
-        $role->setTitle('Преподователь');
+        $role->setTitle('Преподаватель');
 
         $manager->persist($role);
 
