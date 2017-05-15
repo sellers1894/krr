@@ -21,9 +21,17 @@
         {% endif %}
 
         <div id="info">
+            <hr>
             <h3>Установка</h3>
-            <p><b>Создание таблицы <i>symfonykrrr</i>:</b> <i>php bin/console doctrine:database:create</i></p>
-            <p><b>Создание таблицы <i>symfonykrrr</i>:</b> <i>php bin/console doctrine:database:create</i></p>
+            <p><b>Создание базы<i>(symfonykrrr)</i>:</b> <i>php bin/console doctrine:database:create</i></p>
+            <p><b>Создание таблиц:</b><br><i>php bin/console doctrine:migrations:diff</i><br><i>php bin/console doctrine:migrations:migrate</i></p>
+            <p><b>Загрузка фикстур:</b> <i>php bin/console doctrine:fixtures:load</i></p>
+            <hr>
+            <h4>После в бд есть одна заявка и один преподаватель</h4>
+            <p>Данные преподавателя:</p>
+            <p><b>Логин:</b> <i>prepod</i></p>
+            <p><b>Пароль:</b> <i>prepod</i></p>
+
         </div>
     </div>
 {% endblock %}
