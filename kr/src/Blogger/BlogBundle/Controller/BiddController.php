@@ -31,8 +31,8 @@ class BiddController extends Controller
      * Creates a new Bidd entity.
      *
      */
-    public function newAction(Request $request)
-    {
+    public function newAction(Request $request){
+        $message = "";
         $bidd = new Bidd();
         $form = $this->createForm('Blogger\BlogBundle\Form\BiddType', $bidd);
         $form->handleRequest($request);
@@ -42,12 +42,14 @@ class BiddController extends Controller
             $em->persist($bidd);
             $em->flush();
 
-            return $this->redirectToRoute('blogger_blog_bidd_show', array('id' => $bidd->getId()));
+            $message = "Заяявка добавлена и находится на рассмотрении у приёмной комиссии.";
+//            return $this->redirectToRoute('blogger_blog_bidd_show', array('id' => $bidd->getId()));
         }
 
         return $this->render('@BloggerBlog/Bidd/new.html.twig', array(
             'bidd' => $bidd,
             'form' => $form->createView(),
+            'message' => $message
         ));
     }
 
