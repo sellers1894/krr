@@ -17,7 +17,13 @@
         {% if is_granted('IS_AUTHENTICATED_FULLY') %}
             <a class="btn btn-success center-block" href="{{ path('blogger_blog_prepod') }}">Редактирование заявок</a>
         {% else %}
-            <a class="btn btn-success center-block" href="{{ path('_security_login') }}">Подать заявку</a>
+            <a class="btn btn-success center-block" href="{{ path('blogger_blog_bidd_new') }}">Подать заявку</a>
         {% endif %}
+
+        <div id="info">
+            <h3>Установка</h3>
+            <p><b>Создание таблицы <i>symfonykrrr</i>:</b> <i>php bin/console doctrine:database:create</i></p>
+            <p><b>Создание таблицы <i>symfonykrrr</i>:</b> <i>php bin/console doctrine:database:create</i></p>
+        </div>
     </div>
 {% endblock %}

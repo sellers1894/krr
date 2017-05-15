@@ -42,11 +42,11 @@ class BiddController extends Controller
             $em->persist($bidd);
             $em->flush();
 
-            return $this->redirectToRoute('bidd_show', array('id' => $bidd->getId()));
+            return $this->redirectToRoute('blogger_blog_bidd_show', array('id' => $bidd->getId()));
         }
 
-        return $this->render('Bidd/new.html.twig', array(
-            'Bidd' => $bidd,
+        return $this->render('@BloggerBlog/Bidd/new.html.twig', array(
+            'bidd' => $bidd,
             'form' => $form->createView(),
         ));
     }
@@ -59,8 +59,8 @@ class BiddController extends Controller
     {
         $deleteForm = $this->createDeleteForm($bidd);
 
-        return $this->render('Bidd/show.html.twig', array(
-            'Bidd' => $bidd,
+        return $this->render('@BloggerBlog/Bidd/show.html.twig', array(
+            'bidd' => $bidd,
             'delete_form' => $deleteForm->createView(),
         ));
     }
@@ -76,13 +76,15 @@ class BiddController extends Controller
         $editForm->handleRequest($request);
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
+//            $bidd->setCheck(!false);
+//            $this->getDoctrine()->getManager()->persist($bidd);
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('bidd_edit', array('id' => $bidd->getId()));
+            return $this->redirectToRoute('blogger_blog_bidd_edit', array('id' => $bidd->getId()));
         }
 
-        return $this->render('Bidd/edit.html.twig', array(
-            'Bidd' => $bidd,
+        return $this->render('@BloggerBlog/Bidd/edit.html.twig', array(
+            'bidd' => $bidd,
             'edit_form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
         ));
@@ -103,7 +105,7 @@ class BiddController extends Controller
             $em->flush();
         }
 
-        return $this->redirectToRoute('bidd_index');
+        return $this->redirectToRoute('blogger_blog_bidd_index');
     }
 
     /**
@@ -116,7 +118,7 @@ class BiddController extends Controller
     private function createDeleteForm(Bidd $bidd)
     {
         return $this->createFormBuilder()
-            ->setAction($this->generateUrl('bidd_delete', array('id' => $bidd->getId())))
+            ->setAction($this->generateUrl('blogger_blog_bidd_delete', array('id' => $bidd->getId())))
             ->setMethod('DELETE')
             ->getForm()
         ;

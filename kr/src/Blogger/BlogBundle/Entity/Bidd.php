@@ -56,6 +56,16 @@ class Bidd{
 
 
     /**
+     * @ORM\Column(type="boolean")
+     */
+    protected $check1;
+
+    public function __construct(){
+//        $this->check = 0;
+    }
+
+
+    /**
      * Get id
      *
      * @return integer
@@ -183,5 +193,30 @@ class Bidd{
     public function getMark3()
     {
         return $this->mark3;
+    }
+
+
+    /**
+     * Set check1
+     *
+     * @param integer $check1
+     *
+     * @return Bidd
+     */
+    public function setCheck1($check1)
+    {
+        $this->check1 = $check1;
+
+        return $this;
+    }
+
+    /**
+     * Get check1
+     *
+     * @return integer
+     */
+    public function getCheck1()
+    {
+        return $this->check1;
     }
 }

@@ -1,7 +1,3 @@
-blogger_blog_bidd:
-    resource: "@BloggerBlogBundle/Resources/config/routing/Bidd.yml"
-    prefix:   /Bidd
-
 _security_login:
     path:  /login
     defaults: { _controller: "BloggerBlogBundle:Security:login" }
@@ -21,26 +17,28 @@ blogger_blog_prepod:
     defaults: { _controller: "BloggerBlogBundle:Prepod:index" }
 
 blogger_blog_bidd_index:
-    path:     /prepod/Bidd/
+    path:     /prepod/bidd/
     defaults: { _controller: "BloggerBlogBundle:Bidd:index" }
     methods:  GET
 
 blogger_blog_bidd_show:
-    path:     /prepod/Bidd/{id}/show
+    path:     /prepod/bidd/{id}/show
     defaults: { _controller: "BloggerBlogBundle:Bidd:show" }
     methods:  GET
+
+blogger_blog_bidd_edit:
+    path:     /prepod/bidd/{id}/edit
+    defaults: { _controller: "BloggerBlogBundle:Bidd:edit" }
+    methods:  [GET, POST]
+
+blogger_blog_bidd_delete:
+    path:     /prepod/bidd/{id}/delete
+    defaults: { _controller: "BloggerBlogBundle:Bidd:delete" }
+    methods:  DELETE
+
+
 
 blogger_blog_bidd_new:
     path:     /new
     defaults: { _controller: "BloggerBlogBundle:Bidd:new" }
     methods:  [GET, POST]
-
-blogger_blog_bidd_edit:
-    path:     /prepod/Bidd/{id}/edit
-    defaults: { _controller: "BloggerBlogBundle:Bidd:edit" }
-    methods:  [GET, POST]
-
-blogger_blog_bidd_delete:
-    path:     /prepod/Bidd/{id}/delete
-    defaults: { _controller: "BloggerBlogBundle:Bidd:delete" }
-    methods:  DELETE
